@@ -1,0 +1,20 @@
+/*Global mobile CSS*/
+.coralgreeting{
+    height:100px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--backcolor);
+    color: var(--textcolor);
+}
+a{
+    color:var(--accentcolor);
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Inter', 'Kosugi Maru', sans-serif;
+}
+.content{
+    margin: 90px 5% 50px 5%;
+}

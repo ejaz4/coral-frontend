@@ -1,0 +1,127 @@
+/* This is an example CSS file for the Desktop page. */
+/* Your site will automatically switch between desktop and mobile css files. */
+
+/* Should be in every CSS file unless otherwise */
+#v1c{
+    width: 100%;
+    height: 56.25%;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+.leftside{
+    width: 70%
+
+}
+.vplayer1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.loading-elem{
+    border-radius: 3px;
+    animation: loading-anim cubic-bezier(.01,.48,1,.57) 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: loading-anim cubic-bezier(.01,.48,1,.57) 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: loading-anim cubic-bezier(.01,.48,1,.57) 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+  }
+  
+  @keyframes loading-anim{
+    0% {
+        max-width: 0px;
+      opacity:1;
+    }
+    70% {
+        max-width: 100%;
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes loading-anim{
+    0% {
+        
+        max-width: 0px;
+      opacity:1;
+    }
+    70% {
+        
+        max-width: 100%;
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes loading-anim {
+    0% {
+        
+        max-width: 0px;
+      opacity:1;
+    }
+    70% {
+        
+        max-width: 100%;
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  .barctrls{
+    opacity: 0;
+    width:100%;
+      position: relative;
+      bottom: 70px;
+      height: 65px;
+      z-index: 90;
+      padding-bottom: 10px;
+      background: rgb(0,0,0);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%,var(--backcolor) 100%);
+      transition: opacity 0.2s ease-out;
+  }
+  .barctrls:hover{
+    opacity: 1;
+      transition: opacity 0.2s ease-out;
+  }
+  .barctrlsflex{
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .barctrlsitm{
+    background-color: var(--backcolordark);
+    display: inline-block;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 5px;
+    vertical-align: top;
+    transition: 0.2s;
+  }
+  .barctrlsitm img{
+    filter: var(--imgfilter);
+    display: block;
+    width: 15px;
+    margin: 0;
+  }
+  .barctrlsrs{
+    position: absolute;
+    right: 15px;
+  }

@@ -1,0 +1,64 @@
+/* This is an example CSS file for the Desktop page. */
+/* Your site will automatically switch between desktop and mobile css files. */
+
+/* Should be in every CSS file unless otherwise */
+.content{
+    margin: 50px 0px 0px 0px;
+}
+.loading-elem{
+    max-width: 100%;
+    animation: loading-anim cubic-bezier(.01,.48,1,.57) 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: loading-anim cubic-bezier(.01,.48,1,.57) 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: loading-anim cubic-bezier(.01,.48,1,.57) 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+  }
+  
+  @keyframes loading-anim{
+    0% {
+      opacity:0;
+    }
+    50% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes loading-anim{
+    0% {
+      opacity:0;
+    }
+    50% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes loading-anim {
+    0% {
+      opacity:0;
+    }
+    50% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  .finalized{
+      position: relative;
+      word-wrap: break-word !important;
+  }
+  .fdiv{
+    margin-left: 5%;
+    margin-right: 5%;
+  }

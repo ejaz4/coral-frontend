@@ -1,0 +1,7 @@
+/* This is an example CSS file for the Desktop page. */
+/* Your site will automatically switch between desktop and mobile css files. */
+
+/* Should be in every CSS file unless otherwise */
+.coralgreeting{
+    height:100px;
+}

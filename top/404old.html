@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Not Found</title>
+        <script>
+            var flsestrings = {};
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kosugi+Maru&display=swap" rel="stylesheet">
+        <link href="/index.css" rel="stylesheet" type="text/css">
+    </head>
+<body>
+<div class="a1">
+    <div class="message404">
+<image height="75px" src="/images/404.png"></image>
+<p style="margin-bottom:5px;" flsestring="404error">The requested page could not be found.</p>
+<a href="/"><image class="homeicon" height="25px" src="/images/home.svg"></image><p class="home404" flsestring="404gohome">Go home</p></a>
+</div>
+<script>
+    flsestrings["404error"] = {
+        "default": "The requested page could not be found.",
+        "es":"La página solicitada no pudo ser encontrada.",
+        "fr":"La page demandée n'a pu être trouvée.",
+        "ja": "要求されたページが見つかりませんでした。"
+    }
+    flsestrings["404gohome"] = {
+        "default": "Go home",
+        "es":"Vete a casa",
+        "fr":"Rentrer chez soi",
+        "ja": "家に帰る"
+    }
+</script>
+
+</div>
+</body>
+<script src="/flse/flse.js"></script>
+</html>

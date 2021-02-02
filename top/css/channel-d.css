@@ -1,0 +1,73 @@
+.db1{
+    display:inline-block;vertical-align: top;
+}
+.db1 img{
+    display:inline-block;
+    width: 80px;height:80px;border-radius:50%;
+}
+.db1 h1{
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.fl1{
+    display: flex;
+    justify-content: space-between;
+}
+.b12{
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Inter', 'Kosugi Maru', sans-serif;
+    border: 0;
+    background-color: var(--backcolordark);
+    border-radius: 5px;
+    margin-top: 21.440px;
+    transform: scale(1);
+    outline: 0;
+    transition: transform 0.1s ease;
+}
+.b12:hover {
+    background-color: var(--backcolordarkdark);
+}
+.b12:active {
+    transform: scale(0.9);
+    transition: all 0.1s ease;
+}
+.fl3{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+.vtb{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 7px;
+    flex-grow:1;
+    width: 300px;
+    height: 227.75px;
+    vertical-align: top;
+    display: inline-block;
+    margin: 5px;
+}
+.vtb:hover{
+    background-color: var(--controlcolorlight);
+}
+.vtb p{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.vtb img{
+    width: 100%;
+    border-radius: 6px;
+}
+button{
+    color: var(--textcolor);
+}

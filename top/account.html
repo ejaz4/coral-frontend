@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <title flsestring="title">Account - Coral</title>
+        <style id="styles">
+
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kosugi+Maru&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"> 
+        <!-- Make sure you make a css page, one for mobile and one for desktop. -->
+        <!-- When you resize the Window it'll change to examplepage-m.html -->
+        <link href="/global/global-d.css" rel="stylesheet" flsedynstylesheet/>
+        <link href="/css/account-d.css" rel="stylesheet" flsedynstylesheet/>
+    </head>
+    <body onload="loadcall()">
+        <flsehtmlcomponent id="header-area" src="/global/header.html"></flsehtmlcomponent>
+        <!-- Body Start -->
+        <div class="content">
+        <!-- Content Goes Here -->   
+        <div id="sp" class="settingpage">
+            <h1 flsestring="coralsettings">Coral Settings</h1>
+            <div class="settingpageflex">
+                <div onclick="goTo('sp','ai');" class="settingpageflexitm">
+                    <image src="/images/user.svg"></image>
+                    <p flsestring="accinfo">Account Info</p>
+                </div>
+                <div onclick="goTo('sp','lr');" class="settingpageflexitm">
+                    <image src="/images/globe.svg"></image>
+                    <p flsestring="lannreg">Language & Region</p>
+                </div>
+                <div style="display:none;" class="settingpageflexitm">
+                    <image src="/images/credit-card.svg"></image>
+                    <p flsestring="paynsubs">Payment and Subscriptions</p>
+                </div>
+                <div class="settingpageflexitm">
+                    <image src="/images/plus.svg"></image>
+                    <p flsestring="prfc">Products from Team Coral</p>
+                </div>
+            </div>
+        </div>
+        <div id="ai" style="display: none;" class="page">
+            <h1 style="text-align: center;" flsestring="accinfo">Account Info</h1>
+            <div class="pge">
+                <p class="smalltxt" flsestring="fullname">Full Name</p>
+                <input id="tb1"></input>
+                <p class="smalltxt" flsestring="username">Username</p>
+                <input id="tb2"></input>
+                <a onclick="goTo('ai','sp'); updateName();"><button flsestring="savenback"></button></a>
+            </div>
+            <h2 style="opacity: 0.5; text-align: center;" id="cpn"></h2>
+            <p flsestring="yjcawnbh" style="text-align: center; opacity: 0.5;">You joined Coral and we've never been happier.<br>Thanks for doing your part in keeping Coral safe and fun for everyone.</p>
+        </div>
+        <div id="lr" style="display: none;" class="page">
+            <h1 style="text-align: center;" flsestring="lannreg">Language and Region</h1>
+            <div class="pge">
+                <p class="smalltxt" flsestring="language">Language</p>
+                <select id="language">
+                    <option value="default">Automatic</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="ja">日本語</option>
+                </select>
+                <a onclick="goTo('lr','sp');"><button flsestring="back"></button></a>
+            </div>
+        </div>
+        </div>
+        <!-- Body End -->
+    </body>
+    
+    <!-- Make sure to add js here, make sure js file is named after page -->
+    <script src="/js/account.js"></script>
+    <script src="/global/header.js"></script>
+    <script src="/global/global.js"></script>
+    <script src="/flse/flse.js"></script>
+</html>

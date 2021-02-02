@@ -1,0 +1,107 @@
+/* This is an example CSS file for the Desktop page. */
+/* Your site will automatically switch between desktop and mobile css files. */
+
+/* Should be in every CSS file unless otherwise */
+
+.settingpage{
+    text-align: left;
+}
+
+.settingpageflex{
+    display: flex;   
+}
+
+.settingpageflexitm{
+    margin-right: 10px;
+    width: 185px;
+    text-align: center;
+    background-color: var(--controlcolor);
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0px 2px 5px var(--controlshadow);
+    -webkit-box-shadow: 0px 2px 5px var(--controlshadow);
+    -moz-box-shadow: 0px 2px 5px var(--controlshadow);
+    transform: scale(1);
+    transition: transform 0.2s ease-out, border 0.2s ease-out, box-shadow 0.2s ease-out;
+    border: solid 2px transparent;
+}
+.pge{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 10px;
+    width: 400px;
+    text-align: center;
+    background-color: var(--controlcolor);
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 2px 5px var(--controlshadow);
+    -webkit-box-shadow: 0px 2px 5px var(--controlshadow);
+    -moz-box-shadow: 0px 2px 5px var(--controlshadow);
+}
+.settingpageflexitm:hover{
+    transform: scale(1.03);
+    transition: transform 0.2s ease-out, border 0.2s ease-out;
+    border: solid 2px var(--accentcolor);
+}
+.settingpageflexitm img{
+    filter: var(--imgfilter);
+}
+
+.settingpageflexitm p{
+    margin: 5px 0px 0px 0px
+}
+.smalltxt {
+    text-align: left;
+    font-size: 14px;
+    margin-left: 8px;
+    color: var(--textcolor);
+    margin-bottom: 7px;
+}
+input, select {
+    color: var(--textcolor);
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'Inter', 'Kosugi Maru', sans-serif;
+    border-radius: 5px;
+    border: solid 2px var(--backcolordark);
+    background-color: var(--backcolor);
+    outline: none !important;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input{
+    transition: 0.2s ease-out;
+}
+input:focus{
+    border: solid 2px var(--accentcolor);
+}
+select{
+    background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 7px;
+}
+button{
+    padding: 7px;
+    font-size: 16px;
+    height: 42px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border:0;
+    margin-top: 10px;
+    background-color: var(--backcolordark);
+    color: var(--textcolor);
+    border: solid 2px transparent;
+    font-family: 'Inter','Kosugi Maru', sans-serif;    outline: 0;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+}
+button:hover{
+    background-color: var(--backcolordarkdark);
+    color: var(--textcolor);
+    border: solid 2px var(--accentcolor);
+    transition: background-color 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+}

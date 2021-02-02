@@ -1,0 +1,74 @@
+/* This is an example CSS file for the Desktop page. */
+/* Your site will automatically switch between desktop and mobile css files. */
+
+/* Should be in every CSS file unless otherwise */
+.coralgreeting{
+    height:100px;
+}
+/*About page specific*/
+.devprofile{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.devpic{
+    margin-right: 10px;
+    height:100px;
+    border-radius:50px;
+}
+.devicon{
+    filter: invert(37%) sepia(77%) saturate(4855%) hue-rotate(220deg) brightness(98%) contrast(79%);
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    margin: 0;
+}
+.aitm{
+    background-color: var(--backcolordark);
+    display: inline-block;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left:10px;
+    vertical-align: middle;
+    transition: 0.2s;
+}
+.aitm:hover{
+    background-color: var(--backcolordarkdark);
+}
+.aicon{
+    filter: var(--imgfilter);
+    display: block;
+    width: 15px;
+    margin: 0;
+}
+.maitm{
+    background-color: var(--backcolordark);
+    display: inline-block;
+    border-radius: 20px;
+    padding: 7px;
+    margin-left:10px;
+    vertical-align: middle;
+    transition: 0.2s;
+}
+.maitm:hover{
+    background-color: var(--backcolordarkdark);
+}
+.maicon{
+    filter: var(--imgfilter);
+    display: block;
+    width: 25px;
+    margin: 0;
+}
+.devlinks{
+    display: inline-block;
+    margin-left:-10px;
+    margin-top:-10px;
+    width:100%;
+}
+h4{
+    margin-top:10px;
+}
+h3{
+    font-size:24px;
+    margin-top:10px;
+}

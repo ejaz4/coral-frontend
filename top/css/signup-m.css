@@ -1,0 +1,77 @@
+/* THIS CODE MOVED THE LOGIN TO EXISTING OR REGISTER LINKS UNDER THE NAVBAR ON MOBILE. I LEFT THE CODE INCASE IT WAS IMPORTANT (;
+.signupform{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    border: solid 1px var(--backcolordark);
+    text-align: center;
+    color: var(--textcolor);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--controlcolor);
+    margin-bottom: 40px;
+}*/
+.signupform{
+    width: 90%;
+    border: solid 1px var(--backcolordark);
+    text-align: center;
+    color: var(--textcolor);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--controlcolor);
+}
+
+.smalltxt{
+    text-align: left;
+    font-size: 14px;
+    margin-left: 8px;
+    color: var(--textcolor);
+    margin-bottom: 3px;
+}
+input{
+    color: var(--textcolor);
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'Inter', 'Kosugi Maru', sans-serif;
+    border-radius: 5px;
+    border: solid 1px var(--backcolordark);
+    background-color: var(--backcolor);
+}
+.bigsignupbtn{
+    width: 70%;
+    padding: 7px;
+    font-size: 16px;
+    height: 42px;
+    border-radius: 20px;
+    border:0;
+    margin-top: 10px;
+    background-color: var(--backcolordark);
+    color: var(--textcolor);
+    font-family: 'Inter','Kosugi Maru', sans-serif;    outline: 0;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+.bigsignupbtn:hover{
+    background-color: var(--backcolordarkdark);
+    color: var(--textcolor);
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+#header-area{
+    margin-bottom:0px;
+    z-index: 999;
+    position: -webkit-sticky;
+    position: fixed;
+    top:0;
+}
+#header2{
+    margin-bottom:0px;
+    z-index: 999;
+    position: -webkit-sticky;
+    position: fixed;
+    top:0;
+}
+#tb1s,#tb2s,#tb3s,#tb4s,#tb5s{
+    color:red;
+}

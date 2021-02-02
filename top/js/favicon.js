@@ -1,0 +1,18 @@
+var appleIcon = document.createElement('link');
+appleIcon.rel = 'apple-touch-icon';
+appleIcon.sizes = '180x180';
+appleIcon.href = '/images/favicon/apple-touch-icon.png';
+document.head.appendChild(appleIcon);
+var manifest4Ico = document.createElement('link');
+manifest4Ico.rel = 'manifest';
+manifest4Ico.href = '/images/favicon/site.webmanifest';
+document.head.appendChild(manifest4Ico);
+var maskIcon = document.createElement('link');
+maskIcon.rel = 'mask-icon';
+maskIcon.href = '/images/favicon/safari-pinned-tab.svg';
+maskIcon.color = '#5bbad5';
+document.head.appendChild(maskIcon);
+var favicon = document.createElement('link');
+favicon.rel = 'shortcut icon';
+favicon.href = '/images/favicon/favicon.ico';
+document.head.appendChild(favicon);

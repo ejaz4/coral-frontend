@@ -1,0 +1,17 @@
+/* This is an example CSS file for the Desktop page. */
+/* Your site will automatically switch between desktop and mobile css files. */
+
+/* Should be in every CSS file unless otherwise */
+
+.ppcoral{
+    height:100px;
+}
+.devprofile{
+display: block;
+margin-bottom: 25px;
+}
+.devpic{
+    margin-right: 10px;
+    height:65px;
+    float:left;
+}
